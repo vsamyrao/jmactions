@@ -13,10 +13,64 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
+      - uses: actions/checkout@v4      
+      - name: build and publish backend
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo Hello World,
+          echo Mello World.
+      - name: build and publish k6
+        run: |
+          echo Hello World,
+          echo Mello World.
+      - name: build and publish frontend
+        run: |
+          echo Hello World,
+          echo Mello World.
+      - name: build and publish e2e
+        run: |
+          echo Hello World,
+          echo Mello World.
+      - name: build helm backend
+        run: |
+          echo Hello World,
+          echo Mello World.
+      - name: build helm frontend
+        run: |
+          echo Hello World,
+          echo Mello World.      
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4      
+      - name: run backend tests
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run e2e group1
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run e2e group2
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run e2e group3
+        run: |
+          echo Hello World,
+          echo Mello World.                    
+      - name: run e2e group3
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run e2e group4
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run backend performance tests
+        run: |
+          echo Hello World,
+          echo Mello World.          
+      - name: run ui performance tests
+        run: |
+          echo Hello World,
+          echo Mello World.
